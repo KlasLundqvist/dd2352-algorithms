@@ -1,9 +1,13 @@
 // Experimenting with dynamic programming using fibonacci sequence
 /*
 
+This project explores the concept of Dynamic Programming by computing Fibonacci numbers using three different methods:
 
+1. Naive recursion – exponential time due to repeated subproblem computation.
+2. Top-down memoization – stores computed results to avoid recomputation, reducing time complexity to O(n).
+3. Bottom-up tabulation – iteratively builds the solution from base cases, also O(n) time and straightforward space usage.
 
-
+The goal is to compare how dynamic programming techniques improve performance relative to the naive recursive approach.
 
 */
 public class fibonacci {
@@ -53,7 +57,7 @@ public class fibonacci {
     }
 
 
-    //test 2 bottom up solution
+    //test 3 bottom up solution
 
     public static int bot(int n)
     {
