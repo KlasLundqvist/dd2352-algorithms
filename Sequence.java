@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Sequence {
 
 
@@ -6,16 +8,26 @@ public class Sequence {
 
     public static int lis (int[] a)
     {
-        int[] l =  1 * a.length;
+
+        int l = new int[a.length];
+
+        int max = Arrays.stream(l).max().getAsInt();
 
         for (int i = 1; i < a.length; i++)
         {
+            for(int k = 0; k < i; k++)
+            {
+                if(a[k] < a[i])
+                {
+                   l[i] = 1 + max;
+                }
+            }
 
         }
 
         return l;
 
-    }
+    } 
 
 
     
