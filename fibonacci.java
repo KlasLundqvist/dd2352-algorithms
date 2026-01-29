@@ -84,10 +84,10 @@ public class fibonacci {
 
     public static void main(String[] args) {
         int n = 5;
-       // int[] memo = new int[n + 1];
+        int[] memo = new int[n + 1];
        // rec(n);   
-      // mem(n, memo);
-      bot(n);
+       mem(n, memo);
+      //bot(n);
 
 
        
