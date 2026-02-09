@@ -55,9 +55,9 @@ public class fibonacci {
         System.out.println(result);
         return result;
     }
+        
 
-
-    //test 3 bottom up solution
+    //test 3 bottom up.
 
     public static int bot(int n)
     {

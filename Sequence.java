@@ -9,23 +9,25 @@ public class Sequence {
     public static int lis (int[] a)
     {
 
-        int l = new int[a.length];
+        int[] l = new int[a.length];
+         Arrays.fill(l, 1);
 
-        int max = Arrays.stream(l).max().getAsInt();
 
-        for (int i = 1; i < a.length; i++)
+        for (int i = 0; i < a.length; i++)
         {
             for(int k = 0; k < i; k++)
             {
                 if(a[k] < a[i])
                 {
-                   l[i] = 1 + max;
+                    l[i] = Math.max(l[i], 1 + l[k]);
                 }
             }
 
         }
+        int max = Arrays.stream(l).max().getAsInt();
 
-        return l;
+
+        return max;
 
     } 
 
@@ -33,6 +35,11 @@ public class Sequence {
     
 
     public static void main(String[] args) {
+
+        int arr[] = {3, 1, 8, 2, 5};
+
+        int m = lis(arr);
+        System.out.println(m);
         
     }
     
