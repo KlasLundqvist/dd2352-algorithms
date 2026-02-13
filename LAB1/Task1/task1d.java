@@ -46,7 +46,7 @@ public class task1d {
        // Scanner sc = new Scanner(System.in);
 
         long start = System.nanoTime();
-        int n = 320;
+        int n = 9999;
    
         int[] arr = new int[n + 1];
         Arrays.fill(arr, -1);

@@ -3,7 +3,7 @@ package LAB1.Task2;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class tas2c {
+public class task2c {
     static int k;
 
 

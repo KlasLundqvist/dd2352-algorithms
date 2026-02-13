@@ -39,7 +39,7 @@ public class task1b {
         //int b = sc.nextInt();
         //int c = sc.nextInt();
     long start = System.nanoTime();
-    int n = 40;
+    int n = 107;
 
     int result = coins(n, 5, 6, 7);
 
@@ -49,7 +49,9 @@ public class task1b {
     double sec = ms / 1000.0;
 
     System.out.println("n = " + n + ", time = " + ms + " ms");
-    System.out.println("time = " + sec + " seconds");
+    System.out.println("time = " + sec + " seconds"); 
+
+    
 
 
 
